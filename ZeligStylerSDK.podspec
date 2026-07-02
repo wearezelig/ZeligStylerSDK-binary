@@ -2,22 +2,22 @@
 # No source files are compiled; CocoaPods downloads and links the pre-built
 # XCFramework produced by scripts/build-xcframework.sh.
 #
-# This file is BOTH the maintained source and the published artifact: upload it
-# as-is to https://zelig-sdk.oss-cn-beijing.aliyuncs.com/ZeligStylerSDK.podspec
-# (the URL filename must equal the pod name). Keep it pure ASCII - non-ASCII
-# characters break CocoaPods' URL-podspec fetch (Encoding::UndefinedConversionError).
+# Published via this repo's tags: customers point their Podfile at
+#   https://raw.githubusercontent.com/wearezelig/ZeligStylerSDK-binary/<tag>/ZeligStylerSDK.podspec
+# (or /main/ to follow latest). No separate hosting. Keep this file pure ASCII -
+# non-ASCII characters break CocoaPods' URL-podspec fetch
+# (Encoding::UndefinedConversionError).
 #
 # Publishing a new version (order matters):
-#   1. Run `scripts/build-xcframework.sh` -> build/ZeligStylerSDK-<ver>.xcframework.zip
-#      + build/checksum.txt.
+#   1. In the SDK repo run `scripts/build-xcframework.sh` -> new zip + checksum.txt.
 #   2. Upload the zip to OSS under a NEW versioned filename; NEVER overwrite or
 #      delete previously published zips (existing customers still resolve them).
-#   3. Update `spec.version`, `:http` and `:sha256` below.
-#   4. Upload this file to OSS, overwriting the previous podspec (safe - the lock
-#      of already-integrated customers pins their old version).
+#   3. Update `spec.version`, `:http` and `:sha256` below AND Package.swift's
+#      url/checksum, then ONE commit + tag <version> + push. The podspec must be
+#      in the tagged commit or the tag raw URL 404s.
 #
-# (The source podspec at the repo root, ZeligStylerSDK.podspec, compiles from
-# source for internal `:path` development and is NOT what third parties consume.)
+# (The source podspec at the SDK repo root compiles from source for internal
+# `:path` development and is NOT what third parties consume.)
 Pod::Spec.new do |spec|
   spec.name         = "ZeligStylerSDK"
   spec.version      = "1.0.1"
