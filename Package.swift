@@ -1,7 +1,7 @@
 // swift-tools-version:5.6
 //
 // Binary Swift package - the CONTENT of the closed-source wrapper repository
-// (e.g. `ZeligStylerSDK-spm`). This repo holds no source code: it only declares
+// (`ZeligStylerSDK-binary`). This repo holds no source code: it only declares
 // where Xcode downloads the pre-built XCFramework from, and the SHA-256 checksum
 // to verify it. Third-party apps add THIS repo's URL as their SPM dependency.
 //
