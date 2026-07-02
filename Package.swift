@@ -1,12 +1,12 @@
 // swift-tools-version:5.6
 //
-// Binary Swift package — the CONTENT of the closed-source wrapper repository
+// Binary Swift package - the CONTENT of the closed-source wrapper repository
 // (e.g. `ZeligStylerSDK-spm`). This repo holds no source code: it only declares
 // where Xcode downloads the pre-built XCFramework from, and the SHA-256 checksum
 // to verify it. Third-party apps add THIS repo's URL as their SPM dependency.
 //
 // Publishing a new version:
-//   1. Run `scripts/build-xcframework.sh` → produces build/ZeligStylerSDK-<ver>.xcframework.zip
+//   1. Run `scripts/build-xcframework.sh` -> produces build/ZeligStylerSDK-<ver>.xcframework.zip
 //      and build/checksum.txt.
 //   2. Upload that exact zip to a stable https URL (GitHub Release asset / CDN).
 //   3. Set `url` and `checksum` below to match the uploaded file.
@@ -28,8 +28,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "ZeligStylerSDK",
-            url: "https://zelig-sdk.oss-cn-beijing.aliyuncs.com/ZeligStylerSDK-1.0.0.xcframework.zip",
-            checksum: "22678632715649489b9e53b16f8f1ace5b854aac770c8e6ece9d41dcb066c7ea"
+            url: "https://zelig-sdk.oss-cn-beijing.aliyuncs.com/ZeligStylerSDK-1.0.1.xcframework.zip",
+            checksum: "b17ff3d90703d2f2ebf098722fc68798e48bdfb143bee0943f7caf0f3aec63e4"
         )
     ]
 )
