@@ -20,7 +20,7 @@
 # `:path` development and is NOT what third parties consume.)
 Pod::Spec.new do |spec|
   spec.name         = "ZeligStylerSDK"
-  spec.version      = "1.0.2"
+  spec.version      = "1.0.0"
   spec.summary      = "Zelig Styler SDK for iOS - embed the Zelig styling widget"
   spec.description  = <<-DESC
     The Zelig Styler SDK embeds a web-based styling widget in your iOS app.
@@ -36,9 +36,9 @@ Pod::Spec.new do |spec|
 
   # Closed-source binary distribution.
   spec.source = {
-    :http => "https://zelig-sdk.oss-cn-beijing.aliyuncs.com/ZeligStylerSDK-1.0.2.xcframework.zip",
+    :http => "https://zelig-sdk.oss-cn-beijing.aliyuncs.com/prod/ZeligStylerSDK-1.0.0.xcframework.zip",
     :type => :zip,
-    :sha256 => "27f1565f5379cab31ef454bbba140d9ef154f2763c23427577a73daa8d502b71"
+    :sha256 => "a305cf8d0c698b126dc5ff96ba876836efcfe9f28b05299f02a795398bf1214a"
   }
   spec.vendored_frameworks = "ZeligStylerSDK.xcframework"
 
