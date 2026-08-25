@@ -38,7 +38,7 @@ Pod::Spec.new do |spec|
   spec.source = {
     :http => "https://storage.googleapis.com/ios-widget-sdk-zelig-dev/ZeligStylerSDK-1.0.4.xcframework.zip",
     :type => :zip,
-    :sha256 => "0144eae720712fd1871cf4fd5a09090881b12050c6248fd6e8fc3e8425087b0e"
+    :sha256 => "fff1d8d6f057ae6e3659af6db28d43f1613daa352cca66fc99039d3e35c31aaf"
   }
   spec.vendored_frameworks = "ZeligStylerSDK.xcframework"
 
