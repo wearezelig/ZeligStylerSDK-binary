@@ -28,8 +28,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "ZeligStylerSDK",
-            url: "https://storage.googleapis.com/ios-widget-sdk-zelig-prod/ZeligStylerSDK-1.0.8.xcframework.zip",
-            checksum: "e7e961cfae55989de39fb4fd582a05db5dbc6b2de9ef48bbf584e9fe98180c1d"
+            url: "https://storage.googleapis.com/ios-widget-sdk-zelig-prod/ZeligStylerSDK-1.0.9.xcframework.zip",
+            checksum: "fcfa55131fbd8277d905a01537f85fe9b83178c0b19e4e3b3a81c1b10964d7db"
         )
     ]
 )
